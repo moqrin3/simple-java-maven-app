@@ -2,6 +2,8 @@ pipeline {
   // Assign to docker slave(s) label, could also be 'any'
   agent {
     label 'docker'
+  }
+  agent {
         docker {
             label 'docker'
             image 'maven:3-alpine'
